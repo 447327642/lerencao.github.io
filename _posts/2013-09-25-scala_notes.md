@@ -126,6 +126,41 @@ title: Key Points in Scala
     1. 特质不能有类参数
     2. 特质中，对 super 的处理遵循 linearization
 
+## 协变、逆变
+
+-   `Array` 不是协变的，所以
+
+    ```
+    val a: Array[SubClass] = Array(...)
+    val b: Array[SuperClass] = a
+    ```
+    无法编译
+
+
+### Array 的几个关键点
+
+-   Scala 中的 `Array` 和 Java 中的没什么不同，只不过 Scala 给 `Array` 赋予了两个隐式转换，
+    一个是到 `ArrayOps`，一个是到 `WrappedArray`
+-   不能简单的使用 `==` 来判断两个 array 是否相等，可以用 `array.sameElements(other)` 方法
+
+## List 概念、操作
+
+-   List 是不可变的，且是递归形式的。
+-   通过 `Nil` 和 操作符 `::` 来构造。例如：
+
+    ```
+    1 :: 2 :: 3 :: 4 :: Nil
+    ```
+
+-   三个最重要的方法：`head, tail, isEmpty`
+-   List 上的模式匹配：
+    *   Nil
+    *   x :: xs
+    *   List(p1, p2, ..., pn)
+-   `length, last, init, take, drop` 以及 `list(n)`
+-   `list1 ++ list2`, `list updated (n, x)`
+- `filter, takeWhile, filterNot, dropWhile, partition, span`
+
 ## Codeing Tips
 
 - Use expressions not statements. In Scala, a lot of code can be written as small methods of one expression, for elegance, and code maintenance.
