@@ -41,38 +41,6 @@
 /*
 /*****************************************************************************/
 
-/* standard */
-.post pre {
-  border: 1px solid #ddd;
-  background-color: #eef;
-  padding: 0 .4em;
-  white-space: pre-wrap;
-}
-
-.post ul, .post ol {
-  margin-left: 1.35em;
-}
-
-.post code {
-  border: 1px solid #ddd;
-  background-color: #eef;
-  padding: 0 .2em;
-}
-
-.post pre code {
-  border: none;
-}
-
-/* terminal */
-.post pre.terminal {
-  border: 1px solid #000;
-  background-color: #333;
-  color: #FFF;
-}
-
-.post pre.terminal code {
-  background-color: #333;
-}
 
 /* custom */
 .post header {
@@ -84,11 +52,17 @@
   font-size: 80%;
   color: #555;
 }
+
 .post pre {
   word-wrap: break-word;
 }
+
 .post img {
   display: block;
   max-width: 90%;
   margin: 1em auto;
+}
+
+.post p {
+  text-indent: 2em;
 }
