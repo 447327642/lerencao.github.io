@@ -63,3 +63,6 @@
   margin: 1em auto;
 }
 
+.post p {
+  text-indent: 2em;
+}
