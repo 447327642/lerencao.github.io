@@ -5,6 +5,9 @@ title: "待了解的计算机知识"
 
 ## Hindley/Milner type system
 
+- http://akgupta.ca/blog/2013/05/14/so-you-still-dont-understand-hindley-milner/
+- http://akgupta.ca/blog/2013/06/07/so-you-still-dont-understand-hindley-milner-part-2/
+- http://akgupta.ca/blog/2013/06/07/so-you-still-dont-understand-hindley-milner-part-3/
 
 ## Monoid
 
