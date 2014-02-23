@@ -1,11 +1,11 @@
 ##Description
 
-This is my blog using jekyll hosted in github([here](http://funfriend.github.io))
+This is my [blog](http://www.2stupids.com/) using jekyll.
 
 ## how to run it locally
 
-git clone git@github.com:funfriend/funfriend.github.io.git
+git clone https://github.com/windor/windor.github.io.git
 
-cd funfriend.github.io
+cd windor.github.io
 
 jekyll serve -w
