@@ -4,6 +4,10 @@
 /*
 /*****************************************************************************/
 
+body {
+  font-family: Hannotate SC, Helvetica, arial, sans-serif;
+}
+
 .container {
   width: 70%;
   min-width: 480px;
@@ -61,8 +65,4 @@
   display: block;
   max-width: 90%;
   margin: 1em auto;
-}
-
-.post p {
-  text-indent: 2em;
 }
