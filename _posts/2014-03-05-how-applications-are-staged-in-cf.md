@@ -1,7 +1,7 @@
 ---
 layout: post
 title: CF应用是怎样打包的？
-category: ["cloudfoundry"]
+tags: cloudfoundry
 ---
 
 > 本文翻译自 [how applications are staged][1]
