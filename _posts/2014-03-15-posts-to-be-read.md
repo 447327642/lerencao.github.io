@@ -5,19 +5,19 @@ title: 待学习的知识点
 
 ### How to build a ruby gem
 
-> [step-by-step-guide-to-building-your-first-ruby-gem][1]
+> [step by step guide to building your first ruby gem][1]
 
 ### Ruby GC internals
 
-> [watching-understanding-ruby-2.1-garbage-collector][2]
+> [watching understanding ruby 2.1 garbage collector][2]
 
-> [visualizing-garbage-collection-in-ruby-and-python][3]
+> [visualizing garbage collection in ruby and python][3]
 
-> [ruby21-rgengc][4]
+> [ruby21 rgengc][4]
 
 ### How to build command line tool interfaces in ruby
 
-> [ruby-command-line-interface-gems][5]
+> [ruby command line interface gems][5]
 
 > [thor][6]
 
