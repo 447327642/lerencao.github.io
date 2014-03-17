@@ -48,5 +48,21 @@ tags: [functional-programming]
 
 不得不赞一下SICP这本书。
 
+## 更新
+
+要想保证从left和从right进行`fold`操作都得到一样的结果，那么要满足下面这两个条件。
+
+- op满足结合律，所谓的monoid。
+
+  ``` racket
+  (= (op (op a b) c) ((op a (op b c))))
+  ```
+
+- 初始值时，op要满足交换律。
+
+  ``` racket
+  (= (op init a) (op a init))
+  ```
+
 [1]: http://mitpress.mit.edu/sicp/full-text/book/book.html "计算机程序的构造与解释"
 [2]: http://stackoverflow.com/questions/17408880/reduce-fold-or-scan-left-right "reduce, fold or scan(left/right)?"
