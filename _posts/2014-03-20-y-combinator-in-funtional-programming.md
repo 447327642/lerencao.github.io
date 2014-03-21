@@ -13,3 +13,41 @@ tags: [y-combinator funtional-programming todo]
 - [great explanation from Mike Vanier](http://mvanier.livejournal.com/2897.html)，写的十分通俗易懂。
 
 - PLLC这本书也有详细的推导过程。（想要深入理解Y Combinator或者函数式编程，这本书应该是不二之选）
+
+
+### 更新
+
+#### Y Combinator for lazy language:
+
+``` scheme
+(define Y
+  (lambda (f)
+    ((lambda (x) (f (x x)))
+     (lambda (x) (f (x x))))))
+; for a given function f (which is a non-recursive function like almost-factorial),
+; the corresponding recursive function can be obtained
+; first by computing (lambda (x) (f (x x))),
+; and then applying this lambda expression to itself.
+; This is the usual definition of the normal-order Y combinator.
+```
+
+验证 (Y f) = (f (Y f))。
+
+```
+(Y f)
+= ((lambda (x) (f (x x)))
+   (lambda (x) (f (x x))))))
+= (f ((lambda (x) (f (x x)))
+      (lambda (x) (f (x x)))))
+= (f (Y f))
+```
+
+#### Y Combinator fro strict language:
+
+```scheme
+; just replace (x x) with (lambda (y) ((x x) y))
+(define Y
+  (lambda (f)
+    ((lambda (x) (x x))
+     (lambda (x) (f (lambda (y) ((x x) y)))))))
+```
