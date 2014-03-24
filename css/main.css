@@ -5,7 +5,7 @@
 /*****************************************************************************/
 
 body {
-  font-family: Hannotate SC, Helvetica, arial, sans-serif;
+  font-family: Helvetica, arial, sans-serif;
 }
 
 .container {
@@ -65,4 +65,11 @@ body {
   display: block;
   max-width: 90%;
   margin: 1em auto;
+}
+
+.post a {
+  text-decoration: none;
+}
+.post a:hover {
+  text-decoration: underline;
 }
