@@ -1,6 +1,8 @@
-name: Mr. J in the wild
-pygments: true
+name: Wind in the Wild
 markdown: redcarpet
 redcarpet:
-  extensions: ["no_intra_emphasis", "tables", "fenced_code_blocks", "autolink", "strikethrough", "space_after_headers", "superscript", "with_toc_data"]
+  extensions: ["fenced_code_blocks",
+               "autolink",
+               "strikethrough",
+               "space_after_headers"]
 exclude: [vendor]
