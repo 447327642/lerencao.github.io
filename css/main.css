@@ -1,75 +1,137 @@
-/*****************************************************************************/
-/*
-/* Container
-/*
-/*****************************************************************************/
-
 body {
-  font-family: Helvetica, arial, sans-serif;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino,
+               Georgia, "Times New Roman", Times,
+               STKaiti, SimSun, "宋体", serif;
+    font-size: 18px;
+    margin: 5% 18% 5% 18%;
+    padding: 2% 7% 5% 7%;
+    width: 50%;
+    line-height: 200%;
+    border: 1px solid gainsboro;
+    -webkit--border-radius: 20px;
+    border-radius: 20px;
 }
 
-.container {
-  width: 70%;
-  min-width: 480px;
-  margin: auto;
+h1 {
+    font-family: Helvetica, Tahoma, Arial,
+                 Trebuchet MS, Verdana, Helvetica, Arial,
+                 "Hiragino Sans GB", "冬青体", STXihei, "华文细黑",
+                 "Microsoft YaHei", "微软雅黑",
+                 Heiti, "黑体",
+                 SimSun, "宋体",
+                 sans-serif;
 }
 
-/*****************************************************************************/
-/*
-/* Header
-/*
-/*****************************************************************************/
-.site > header {
-  text-align: right;
-}
-
-/*****************************************************************************/
-/*
-/* Index
-/*
-/*****************************************************************************/
-#home ul.posts {
-  list-style-type: none;
-}
-#home ul.posts a {
-  text-decoration: none;
-}
-#home ul.posts a:hover {
-  text-decoration: underline;
+h2 {
+    font-family: Helvetica, Tahoma, Arial,
+                 Trebuchet MS, Verdana, Helvetica, Arial,
+                 "Hiragino Sans GB", "冬青体", STXihei, "华文细黑",
+                 "Microsoft YaHei", "微软雅黑",
+                 Heiti, "黑体",
+                 SimSun, "宋体",
+                 sans-serif;
+    margin-top: 60px;
+    margin-bottom: 40px;
+    border-bottom: 2px gainsboro solid;
+    width: 96%;
+    line-height: 150%;
+    color: #666666;
 }
 
 
-/*****************************************************************************/
-/*
-/* Posts
-/*
-/*****************************************************************************/
-
-
-/* custom */
-.post header {
-  text-align: center;
-  margin-bottom: 2em;
+H3 {
+    font-family: Helvetica, Tahoma, Arial,
+                 Trebuchet MS, Verdana, Helvetica, Arial,
+                 "Hiragino Sans GB", "冬青体", STXihei, "华文细黑",
+                 "Microsoft YaHei", "微软雅黑",
+                 Heiti, "黑体",
+                 SimSun, "宋体",
+                 sans-serif;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    border-bottom: 1px gainsboro solid;
+    width: 92%;
+    line-height: 150%;
+    color: #666666;
 }
 
-.post > header time {
-  font-size: 80%;
-  color: #555;
+
+h4 {
+    font-family: Helvetica, Tahoma, Arial,
+                 Trebuchet MS, Verdana, Helvetica, Arial,
+                 "Hiragino Sans GB", "冬青体", STXihei, "华文细黑",
+                 "Microsoft YaHei", "微软雅黑",
+                 Heiti, "黑体",
+                 SimSun, "宋体",
+                 sans-serif;
+    margin-top: 28px;
+    margin-bottom: 14px;
+    border-bottom: 1px gainsboro solid;
+    width: 88%;
+    line-height: 150%;
+    color: #666666;
 }
 
-.post pre {
-  word-wrap: break-word;
+
+li {
+    margin-left: 10px;
 }
 
-.post img {
-  display: block;
-  max-width: 90%;
-  margin: 1em auto;
+
+blockquote {
+    border-left: 4px gainsboro solid;
+    padding-left: 5px;
+    margin-left: 20px;
+    opacity: 0.6;
 }
 
-.post a {
-  text-decoration: none;
+code {
+    font-family: "Lucida Sans Typewriter", "Lucida Console", Monaco, "Courier New", mono, monospace;
+    font-size: 68%;
 }
-.post a:hover {
-  text-decoration: underline;
+
+pre {
+    font-family: "Lucida Sans Typewriter", "Lucida Console", Monaco, "Courier New", mono, monospace;
+    font-size: 90%;
+    border: solid 1px gainsboro;
+    background-color: whitesmoke;
+    padding: 5px;
+    line-height: 120%;
+    margin-left: 10px;
+    width: 90%;
+}
+pre code {
+    font-family: "Lucida Sans Typewriter", "Lucida Console", Monaco, "Courier New", mono, monospace;
+    font-size: 76%;
+}
+
+
+
+
+a {
+    text-decoration: none;
+    /*cursor: crosshair;*/
+    border-bottom: 1px dashed lightslategrey;
+    padding: 1px;
+    color: black;
+}
+a:hover {
+  background-color: gainsboro;
+}
+
+
+img {
+    display: block;
+    box-shadow: 0 0 10px #555;
+    -webkit-box-shadow: 0 0 10px #555;
+    border-radius: 6px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+hr {
+    color: gainsboro;
 }

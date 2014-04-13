@@ -7,19 +7,7 @@ title: Wind in the Wild
   <h2>我的文章</h2>
   <ul class="posts">
     {% for post in site.posts %}
-
-      {% unless post.next %}
-        <h3>{{ post.date | date: '%Y' }}</h3>
-      {% else %}
-        {% capture year %} {{ post.date | date: '%Y' }} {% endcapture %}
-        {% capture nyear %} {{ post.next.date | date: '%Y' }} {% endcapture %}
-        {% if year != nyear %}
-          <h3>{{ post.date | date: '%Y' }}</h3>
-        {% endif %}
-      {% endunless %}
-
-        <li><span>{{ post.date | date:"%m月%d日" }}</span> - <a href="{{ post.url }}">{{ post.title }}</a></li>
-
+        <li><a href="{{ post.url }}">{{ post.title }}</a></li>
     {% endfor %}
   </ul>
 </div>
