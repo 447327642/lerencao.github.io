@@ -99,6 +99,8 @@ pre {
     line-height: 120%;
     margin-left: 10px;
     width: 90%;
+
+    overflow: scroll;
 }
 pre code {
     font-family: "Lucida Sans Typewriter", "Lucida Console", Monaco, "Courier New", mono, monospace;
@@ -129,6 +131,7 @@ img {
     margin-right: auto;
     margin-top: 10px;
     margin-bottom: 10px;
+    width: 80%;
 }
 
 
