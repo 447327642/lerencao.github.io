@@ -2,6 +2,7 @@
 layout: post
 title: 我为什么想退学（二）
 tags: [drop-out-school]
+published: false
 ---
 
 受伤之后，几乎一年时间里我没有完整的碰过代码，自然能力也没提高多少。

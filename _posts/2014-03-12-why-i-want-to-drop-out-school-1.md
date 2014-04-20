@@ -2,6 +2,7 @@
 layout: post
 title: 我为什么想退学（一）
 tags: [drop-out-school]
+published: false
 ---
 
 研究生生活已经过了大半年，退学的想法在五个月前开始发酵，持续到现在，已经愈发强烈了。

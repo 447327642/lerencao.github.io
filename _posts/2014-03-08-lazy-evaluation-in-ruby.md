@@ -2,6 +2,7 @@
 layout: post
 title: Ruby中的Lazy Evaluation
 tags: ruby lazy-evaluation
+published: false
 ---
 
 > [Ruby 2.0.0: Enumerable::Lazy](http://magazine.rubyist.net/?Ruby200SpecialEn-lazy)

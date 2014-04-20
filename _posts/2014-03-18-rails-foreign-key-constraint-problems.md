@@ -2,6 +2,7 @@
 layout: post
 title: rails外键约束
 tags: [todo rails]
+published: false
 ---
 > [Ruby on Rails Guides](http://guides.rubyonrails.org/migrations.html#active-record-and-referential-integrity) 是这么描述RoR与[引用完整性](http://en.wikipedia.org/wiki/Referential_integrity)的：
 

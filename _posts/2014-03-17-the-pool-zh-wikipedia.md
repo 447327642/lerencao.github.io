@@ -2,6 +2,7 @@
 layout: post
 title: 维基百科上的中文条目
 tags: [wikipedia]
+published: false
 ---
 
 维基百科为我学习CS相关的概念提供了极大的帮助。

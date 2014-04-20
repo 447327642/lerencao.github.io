@@ -1,11 +1,12 @@
 ---
 layout: post
-title: Scala Cheat Sheet
+title: Scala 备忘单
 ---
 
-**最近在 [coursera](https://www.coursera.org) 上学习 [Martin Odersky](http://lampwww.epfl.ch/~odersky/) 主讲的
-[functional programming principles in scala](https://class.coursera.org/progfun-003/class) 课程，课程提供了下面的
-*Scala Cheat Sheet*, 个人觉得写的很好，故摘录在此。**
+> 最近在 [coursera](https://www.coursera.org) 上学习
+> [Martin Odersky](http://lampwww.epfl.ch/~odersky/) 主讲的
+> [functional programming principles in scala](https://class.coursera.org/progfun-003/class) 课程，
+> 课程提供了下面的 *Scala Cheat Sheet*, 写的很好，摘录于此。
 
 ## Evaluation Rules
 

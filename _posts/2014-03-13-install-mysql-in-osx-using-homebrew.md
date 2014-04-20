@@ -2,6 +2,7 @@
 layout: post
 title: 在OSX下配置mysql
 tags: [mysql]
+published: false
 ---
 
 #### 安装mysql

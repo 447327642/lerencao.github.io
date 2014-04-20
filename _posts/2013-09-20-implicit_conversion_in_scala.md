@@ -2,6 +2,7 @@
 layout: post
 title: Scala 的隐式转换
 tags: ["scala", "implicit conversion"]
+published: false
 ---
 
 ### 什么是隐式转换（implicit conversion）

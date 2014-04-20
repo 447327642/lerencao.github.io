@@ -1,6 +1,6 @@
 ---
 layout: post
-title: CF应用是怎样打包的？
+title: CloudFoundry 的应用打包过程（译）
 tags: cloudfoundry
 ---
 

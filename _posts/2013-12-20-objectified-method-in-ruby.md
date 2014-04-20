@@ -2,6 +2,7 @@
 layout: post
 title:  对象的方法
 tags: ["ruby"]
+published: false
 ---
 
 ## 对象化的方法（objectified method）

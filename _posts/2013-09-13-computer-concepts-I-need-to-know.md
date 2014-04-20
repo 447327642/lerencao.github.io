@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "待了解的计算机知识"
+published: false
 ---
 
 ## Hindley/Milner type system

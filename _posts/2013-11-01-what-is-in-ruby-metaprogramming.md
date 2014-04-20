@@ -2,6 +2,7 @@
 layout: post
 title: Ruby Metaprogramming 到底有什么？
 date: 2013-11-01
+published: false
 ---
 
 ## 对象模型

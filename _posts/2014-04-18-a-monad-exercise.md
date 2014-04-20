@@ -3,9 +3,8 @@ layout: post
 title: 一个 Monad 练习题
 ---
 
-## 一个 Monad 练习题
 
-下面练习题来自于[Understanding Monads Using Scala](http://blog.tmorris.net/posts/understanding-monads-using-scala-part-1/index.html)
+下面练习题来自于 “[Understanding Monads Using Scala](http://blog.tmorris.net/posts/understanding-monads-using-scala-part-1/index.html)”
 
 ```scala
 // A typical data type with a single abstract method
@@ -110,7 +109,7 @@ object Sequencing {
 }
 ```
 
-### sequenceOption的实现
+### 实现 sequenceOption
 
 ```scala
 def sequenceOption[A](x: List[Option[A]]): Option[List[A]] =
@@ -123,7 +122,8 @@ def sequenceOption[A](x: List[Option[A]]): Option[List[A]] =
 
 #### 例子1：`x = List(Some(7), Some(8), Some(9))`
 
-将`x`代入到`sequenceOption`中，并展开`foldRight`得到（`ops`指的是传递给`foldRight`的匿名函数）：
+将 `x` 代入到 `sequenceOption` 中，并展开 `foldRight` 得到
+（`ops` 指的是传递给 `foldRight` 的匿名函数）：
 
 ```scala
 ops(Some(7), ops(Some(8), ops(Some(9), Option(List()))))
@@ -239,15 +239,16 @@ Some(None).flatten //
 None
 ```
 
-注意：这个例子中，一旦遇到了一个None值，fold值就变成`None`，这导致后续的所有`fold`操作都会是`None`。
+这个例子中，一旦遇到了一个 `None` 值，fold 值就变成 `None`，
+这导致后续所有的 `fold` 操作都会是 `None`。
 
 #### 例子三：`List()`
 
-对于`List()`来说，因为没有元素，`foldRight`操作返回的是初始值`Option(List())`，
-也即`Some(List())`，一个包含空元素列表的`Some`。
+对于 `List()` 来说，因为没有元素，`foldRight` 操作返回的是初始值 `Option(List())`，
+也即 `Some(List())`，一个包含空元素列表的 `Some`。
 
 
-### sequenceInter实现
+### 实现 sequenceInter
 
 ```scala
 x.foldRight(unitalInter(List[A]())) { (it, mem) =>
@@ -257,15 +258,15 @@ x.foldRight(unitalInter(List[A]())) { (it, mem) =>
 
 #### 例子一：`x = List()`
 
-展开`sequenceInter(List())`得到`unitalInter(List[A]())`，即： `Inter(_ => List[A]())`。
+展开 `sequenceInter(List())` 得到 `unitalInter(List[A]())`，即：`Inter(_ => List[A]())`。
 
 
 #### 例子二：`x = List(Inter(1+), Inter(2*))`
 
-`1+`、`2*`这样的语法是Scala的`postfixOps`，它允许你使用后缀语法。
-在这里，可以写成`List(Inter(1 + _), Inter(2 * _)`。
+`1+`、`2*` 这样的语法是 Scala 的 `postfixOps`，它允许你使用后缀语法。
+在这里，可以写成 `List(Inter(1 + _), Inter(2 * _)`。
 
-展开`sequenceInter(x)`得到：
+展开 `sequenceInter(x)` 得到：
 
 ```scala
 ops(Inter(1 + _), ops(Inter(2 * _), Inter(_ => List[A]())))

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "记优酷的一次笔试题目"
+published: false
 ---
 
 ### 第一题

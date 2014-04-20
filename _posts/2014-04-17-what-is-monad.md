@@ -5,8 +5,6 @@ tags: [functional-programming, monad]
 ---
 
 
-## Monad 是什么
-
 ### 定义
 
 一个`monad`包含三个东西：

@@ -2,6 +2,7 @@
 layout: post
 title: 暂存文件中的一部分
 tags: [git]
+published: false
 ---
 
 刚刚修改文件，忘了暂存，之后又修改了文件的另一部分。

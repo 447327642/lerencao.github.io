@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 待学习的知识点
+published: false
 ---
 
 ### How to build a ruby gem

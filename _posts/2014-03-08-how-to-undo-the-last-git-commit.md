@@ -2,6 +2,7 @@
 layout: post
 title: 撤销git的上一次提交
 tags: git
+published: false
 ---
 
 
