@@ -151,7 +151,7 @@ ops(Some(7), ops(Some(8), ops(Some(9), Option(List()))))
 
     从而有：
 
-    ```
+    ```scala
     ops(Some(7), ops(Some(8), ops(Some(9), Option(List()))))
     // ==>
     ops(Some(7), ops(Some(8), Option(List(9))))
@@ -159,7 +159,7 @@ ops(Some(7), ops(Some(8), ops(Some(9), Option(List()))))
 
 2. 继续求子表达式：
 
-   ```
+   ```scala
    ops(Some(8), Option(List(9)))
    //==>
    Some(8) flatMap { a =>
