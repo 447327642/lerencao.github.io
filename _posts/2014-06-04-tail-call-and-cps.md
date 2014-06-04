@@ -245,7 +245,7 @@ function sum(n, cont) {
 接下来要做的事情就是对自由变量的解引用。
 我们知道，本例中，需要解引用的是匿名函数 `function(acc) { cont(n + acc) }` 中的变量 `n` 和 `cont` 。
 在 javascript 中，可以用下列的方式实现
-（[let binding](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/New_in_JavaScript/1.7#Block_scope_with_let_(Merge_into_let_Statement) ) 还有待被接受 ）：
+（[let binding](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let) 还有待被接受 ）：
 
 ``` javascript
 (function(n, cont) {
