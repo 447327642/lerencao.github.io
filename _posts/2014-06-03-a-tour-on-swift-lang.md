@@ -129,7 +129,7 @@ title: a tour on Swift Language Tour
    否则可选值中的值会被解包，赋值给 `let` 后的常量， `if` 代码块就可以使用这个常量值了。
 
 3. Swift 把 switch expression 做对了，有了模式匹配功能，但需要 let binding，
-   和 Scala 中的 switch/case 相比，略显复杂。
+   和 Scala 中的 match/case 相比，略显复杂。
 
    ```
    let vegetable = "red pepper"
